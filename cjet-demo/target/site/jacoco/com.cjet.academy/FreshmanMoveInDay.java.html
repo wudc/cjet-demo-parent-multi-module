@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FreshmanMoveInDay.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">cjet-demo</a> &gt; <a href="index.source.html" class="el_package">com.cjet.academy</a> &gt; <span class="el_source">FreshmanMoveInDay.java</span></div><h1>FreshmanMoveInDay.java</h1><pre class="source lang-java linenums">package com.cjet.academy;
+
+import java.util.Arrays;
+
+<span class="fc" id="L5">public class FreshmanMoveInDay {</span>
+<span class="fc" id="L6">	String[] roomItems = {&quot;Alarm clock&quot;, &quot;Bed linens&quot;, &quot;Clothes hangers&quot;, &quot;Computer&quot;, &quot;Laundry basket&quot; };</span>
+	
+	public boolean DormroomCheckList(String[] items) {
+<span class="fc bfc" id="L9" title="All 2 branches covered.">		if ( Arrays.equals(roomItems, items)) {</span>
+<span class="fc" id="L10">			System.out.println(&quot;Dorm room move in checklist completed.&quot;);</span>
+<span class="fc" id="L11">			return true;</span>
+		}
+		else {
+<span class="fc" id="L14">			System.out.println(&quot;Dorm room move in checklist incompleted.&quot;);</span>
+<span class="fc" id="L15">			return false;</span>
+		}
+	}
+	
+	public String[] createBackpack() {
+<span class="fc" id="L20">		String[] bag = { &quot;Books&quot;, &quot;laptop&quot;, &quot;Pens&quot; };</span>
+<span class="fc" id="L21">		System.out.println(&quot;My school bag contains: &quot; + Arrays.toString(bag));</span>
+<span class="fc" id="L22">		return bag;</span>
+	}
+
+	public String[] addPencils() {
+<span class="fc" id="L26">		String[] bag = { &quot;Books&quot;, &quot;laptop&quot;, &quot;Pens&quot;, &quot;Pencils&quot; };</span>
+<span class="fc" id="L27">		System.out.println(&quot;Now my backpack contains: &quot; + Arrays.toString(bag));</span>
+<span class="fc" id="L28">		return bag;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>
